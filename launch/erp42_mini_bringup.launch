@@ -1,0 +1,10 @@
+<launch>
+    <node name="erp_base" pkg="erp42_mini_ros2" type="ErpSerialHandler.py" output="screen">
+        <param name="/port" value="/dev/ttyUSB0" type="str"/>
+        <param name="/baudrate" value="115200" type="int" />
+    </node>
+    
+    <node name="livox_lidar" pkg="livox_ros_driver2" type="msg_MID360_launch.py">
+
+
+</launch>
